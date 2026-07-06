@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Nav from "./(components)/display/nav";
+import Nav from "./(components)/core/nav";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body className='min-h-full flex flex-col'>
         <div className='flex flex-col h-screen max-h-screen'>
           <Nav />
-          <div className="flex-grow overflow-y-auto #000000">{children}</div>
+          <div className='flex-grow overflow-y-auto #000000'>{children}</div>
         </div>
       </body>
     </html>
